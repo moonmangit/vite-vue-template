@@ -1,11 +1,13 @@
 import { createApp } from 'vue';
+import { createI18n } from 'vue-i18n';
+import { createPinia } from 'pinia';
+import { Icon } from '@iconify/vue';
+
 import App from './App.vue';
 import router from './view/router';
-import { createPinia } from 'pinia';
-import { createI18n } from 'vue-i18n';
+
 import en from './assets/locales/en.json';
 import th from './assets/locales/th.json';
-import { Icon } from '@iconify/vue';
 
 const app = createApp(App);
 
