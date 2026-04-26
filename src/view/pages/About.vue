@@ -8,6 +8,7 @@
     >
       This is the about page.
     </p>
+    <AppIcon icon="mdi:home" />
   </div>
 </template>
 
