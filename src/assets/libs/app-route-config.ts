@@ -1,5 +1,5 @@
-import type { RouteRecordRaw } from "vue-router";
-import Layouts from "../../view/layouts";
+import type { RouteRecordRaw } from 'vue-router';
+import Layouts from '../../view/layouts';
 
 export type AppRouteConfig =
   | RouteRecordRaw

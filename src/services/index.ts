@@ -1,12 +1,12 @@
-import axios from "axios";
-import { defineAuthService } from "./auth";
-import type { ServiceContext } from "../assets/libs/service-context";
+import axios from 'axios';
+import { defineAuthService } from './auth';
+import type { ServiceContext } from '../assets/libs/service-context';
 
 // define base axios instance with config (.env, constants, etc.)
 const base = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL || "http://localhost:3000/api",
+  baseURL: import.meta.env.VITE_API_BASE_URL || 'http://localhost:3000/api',
   headers: {
-    "Content-Type": "application/json",
+    'Content-Type': 'application/json',
   },
 });
 
