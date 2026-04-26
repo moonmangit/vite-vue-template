@@ -1,0 +1,4 @@
+{
+  "welcome": "Welcome to the application!",
+  "description": "This is a sample application using Vue.js, Pinia, and Vue Router."
+}
