@@ -4,7 +4,10 @@
     {{ $i18n.locale }}
     {{ $t('welcome') }}
     <LangSwitcher />
-    <PButton label="test" />
+    <PButton
+      label="test"
+      icon="pi pi-home"
+    />
   </div>
 </template>
 

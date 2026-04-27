@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 @import './_primevue.css';
+@import 'primeicons/primeicons.css';
 
 :root {
   font-size: 16px;
