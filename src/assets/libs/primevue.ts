@@ -2,6 +2,9 @@ import type { createApp } from 'vue';
 import Aura from '@primeuix/themes/aura';
 import Primevue from 'primevue/config';
 import Button from 'primevue/button';
+import Avatar from 'primevue/avatar';
+import Menu from 'primevue/menu';
+import Divider from 'primevue/divider';
 import { definePreset } from '@primeuix/themes';
 
 const customTheme = definePreset(Aura, {
@@ -65,10 +68,16 @@ export function appPrimevueConfig(app: ReturnType<typeof createApp>) {
     },
   });
   app.component('PButton', Button);
+  app.component('PAvatar', Avatar);
+  app.component('PMenu', Menu);
+  app.component('PDivider', Divider);
 }
 
 declare module 'vue' {
   export interface GlobalComponents {
     PButton: typeof Button;
+    PAvatar: typeof Avatar;
+    PMenu: typeof Menu;
+    PDivider: typeof Divider;
   }
 }

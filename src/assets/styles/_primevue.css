@@ -4,4 +4,7 @@
     --p-button-padding-x: 0.4rem;
     --p-button-padding-y: 0.25rem;
   }
+  .p-menu {
+    @apply bg-white! dark:bg-surface-900!;
+  }
 }
