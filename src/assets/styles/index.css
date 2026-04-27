@@ -1,21 +1,22 @@
 @import 'tailwindcss';
+@import './_primevue.css';
 
 :root {
   font-size: 16px;
 }
 
 @theme {
-  --color-primary-50: oklch(95.76% 0.009 264.52);
-  --color-primary-100: oklch(91.21% 0.019 265.98);
-  --color-primary-200: oklch(82.25% 0.039 265.8);
-  --color-primary-300: oklch(73.14% 0.06 265.51);
-  --color-primary-400: oklch(63.87% 0.083 265.05);
-  --color-primary-500: oklch(54.51% 0.108 264.35);
-  --color-primary-600: oklch(46.58% 0.09 264.4);
-  --color-primary-700: oklch(38.3% 0.071 264.49);
-  --color-primary-800: oklch(29.55% 0.05 264.64);
-  --color-primary-900: oklch(20.1% 0.028 264.97);
-  --color-primary-950: oklch(16.89% 0.02 265.79);
+  --color-primary-50: oklch(94.34% 0.033 307.17);
+  --color-primary-100: oklch(88.68% 0.065 307.17);
+  --color-primary-200: oklch(77.35% 0.135 305.44);
+  --color-primary-300: oklch(66.9% 0.2 303.69);
+  --color-primary-400: oklch(57.89% 0.254 300.39);
+  --color-primary-500: oklch(51.64% 0.279 294.66);
+  --color-primary-600: oklch(43.9% 0.236 294.97);
+  --color-primary-700: oklch(35.76% 0.189 295.7);
+  --color-primary-800: oklch(27.18% 0.14 296.7);
+  --color-primary-900: oklch(18.02% 0.085 301.06);
+  --color-primary-950: oklch(14.93% 0.068 302.16);
 
   --color-surface-50: oklch(96.05% 0.004 314.8);
   --color-surface-100: oklch(92.04% 0.008 319.45);

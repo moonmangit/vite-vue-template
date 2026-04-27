@@ -6,6 +6,8 @@ import { Icon } from '@iconify/vue';
 import App from './App.vue';
 import router from './view/router';
 
+import { appPrimevueConfig } from './assets/libs/primevue';
+
 import en from './assets/locales/en.json';
 import th from './assets/locales/th.json';
 
@@ -36,5 +38,8 @@ declare module 'vue' {
     AppIcon: typeof Icon;
   }
 }
+
+// primevue
+appPrimevueConfig(app);
 
 app.mount('#app');

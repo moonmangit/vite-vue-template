@@ -4,6 +4,7 @@
     {{ $i18n.locale }}
     {{ $t('welcome') }}
     <LangSwitcher />
+    <PButton label="test" />
   </div>
 </template>
 
