@@ -22,7 +22,11 @@
             </template>
           </Card>
           <main>
-            <RouterView />
+            <RouterView #="{ Component }">
+              <Transition name="fade">
+                <component :is="Component" />
+              </Transition>
+            </RouterView>
           </main>
         </div>
       </template>
@@ -40,5 +44,16 @@ import AsideNavigation from '../../components/layout/default/AsideNavigation.vue
 
 #layout-default {
   --aside-w: 300px;
+}
+
+/* we will explain what these classes do next! */
+.fade-enter-active,
+.fade-leave-active {
+  @apply duration-150;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  @apply opacity-0 -translate-x-1;
 }
 </style>

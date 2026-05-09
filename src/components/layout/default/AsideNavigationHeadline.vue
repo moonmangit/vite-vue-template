@@ -34,27 +34,30 @@
       <template #header>
         <AppIcon
           icon="mdi:magnify"
-          class="text-xl text-surface-400 shrink-0"
+          class="text-xl shrink-0"
         />
         <input
           ref="inputRef"
           v-model="query"
           type="text"
           placeholder="Search menu..."
-          class="flex-1 bg-transparent outline-none text-sm placeholder:text-surface-400"
+          class="flex-1 bg-transparent outline-none text-sm"
         />
-        <button
-          class="text-surface-400 hover:text-surface-600 transition-colors"
+
+        <PButton
+          size="small"
+          icon="pi pi-times"
+          rounded
+          severity="secondary"
+          text
           @click="isOpen = false"
-        >
-          <AppIcon icon="mdi:close" />
-        </button>
+        />
       </template>
 
       <ul class="max-h-72 overflow-y-auto">
         <li
           v-if="results.length === 0"
-          class="px-4 py-6 text-center text-sm text-surface-400"
+          class="px-4 py-6 text-center text-sm"
         >
           No results found.
         </li>
@@ -69,10 +72,10 @@
           >
             <AppIcon
               :icon="item.icon"
-              class="shrink-0 text-base text-surface-400"
+              class="shrink-0 text-base"
             />
             <span>{{ item.title }}</span>
-            <span class="ml-auto text-xs text-surface-400 truncate max-w-32">{{
+            <span class="ml-auto text-xs truncate max-w-32">{{
               item.path
             }}</span>
           </RouterLink>
