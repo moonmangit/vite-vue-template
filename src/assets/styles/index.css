@@ -34,4 +34,35 @@
   --color-surface-800: oklch(30.04% 0.03 273.6);
   --color-surface-900: oklch(20.29% 0.016 279.29);
   --color-surface-950: oklch(17.32% 0.011 268.05);
+
+  /* Modern Clean overrides */
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md:
+    0 4px 6px -1px rgb(0 0 0 / 0.07), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+  --shadow-lg:
+    0 10px 15px -3px rgb(0 0 0 / 0.07), 0 4px 6px -4px rgb(0 0 0 / 0.05);
+}
+
+/* Global PrimeVue Overrides for Rounded Corners */
+.p-button {
+  border-radius: var(--radius-xl) !important;
+}
+
+.p-datatable {
+  border-radius: var(--radius-xl);
+}
+
+.p-dialog {
+  border-radius: var(--radius-2xl) !important;
+}
+
+.p-inputtext {
+  border-radius: var(--radius-lg) !important;
+}
+
+.p-tabs .p-tablist-tab-list {
+  border-bottom: 1px solid var(--surface-200);
 }

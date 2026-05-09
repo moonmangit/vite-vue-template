@@ -1,8 +1,9 @@
 import { defineStore } from 'pinia';
 import { ref } from 'vue';
+import { appConfig } from '../config/appConfig';
 
 const DARK_THEME_LOCAL_STORAGE_KEY = 'dark-theme';
-const DEFAULT_DARK_THEME = false; // by default it was 'light'
+const DEFAULT_DARK_THEME = appConfig.theme.defaultMode === 'dark';
 
 export const useTheme = defineStore('theme', () => {
   const storedDarkTheme = localStorage.getItem(DARK_THEME_LOCAL_STORAGE_KEY);
