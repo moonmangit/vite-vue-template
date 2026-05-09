@@ -1,0 +1,10 @@
+@layer components {
+  .p-inputtext {
+    --p-inputtext-padding-x: 0.5rem;
+    --p-inputtext-padding-y: 0.25rem;
+    --p-inputtext-border-radius: 0.375rem;
+    --p-inputtext-shadow: none;
+
+    border: 1px solid var(--color-surface-200);
+  }
+}

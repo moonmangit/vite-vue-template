@@ -5,6 +5,7 @@ import Button from 'primevue/button';
 import Avatar from 'primevue/avatar';
 import Menu from 'primevue/menu';
 import Divider from 'primevue/divider';
+import Dialog from 'primevue/dialog';
 import { definePreset } from '@primeuix/themes';
 
 const customTheme = definePreset(Aura, {
@@ -71,6 +72,7 @@ export function appPrimevueConfig(app: ReturnType<typeof createApp>) {
   app.component('PAvatar', Avatar);
   app.component('PMenu', Menu);
   app.component('PDivider', Divider);
+  app.component('PDialog', Dialog);
 }
 
 declare module 'vue' {
@@ -79,5 +81,6 @@ declare module 'vue' {
     PAvatar: typeof Avatar;
     PMenu: typeof Menu;
     PDivider: typeof Divider;
+    PDialog: typeof Dialog;
   }
 }

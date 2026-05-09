@@ -1,0 +1,9 @@
+@layer components {
+  .p-card {
+    --p-card-body-padding: 0.5rem;
+    --p-card-shadow: none;
+    --p-card-border-radius: 0.375rem;
+
+    border: 1px solid var(--color-surface-200);
+  }
+}

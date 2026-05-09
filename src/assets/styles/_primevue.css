@@ -1,10 +1,4 @@
-/* config global component */
-@layer components {
-  .p-button {
-    --p-button-padding-x: 0.4rem;
-    --p-button-padding-y: 0.25rem;
-  }
-  .p-menu {
-    @apply bg-white! dark:bg-surface-900!;
-  }
-}
+@import './primevue/_button.css';
+@import './primevue/_menu.css';
+@import './primevue/_card.css';
+@import './primevue/_input.css';

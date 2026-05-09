@@ -1,0 +1,5 @@
+@layer components {
+  .p-menu {
+    @apply bg-white! dark:bg-surface-900!;
+  }
+}
