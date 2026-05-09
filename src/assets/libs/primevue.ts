@@ -5,6 +5,18 @@ import Button from 'primevue/button';
 import Avatar from 'primevue/avatar';
 import Menu from 'primevue/menu';
 import Divider from 'primevue/divider';
+import DataTable from 'primevue/datatable';
+import Column from 'primevue/column';
+import Chart from 'primevue/chart';
+import Tabs from 'primevue/tabs';
+import TabList from 'primevue/tablist';
+import Tab from 'primevue/tab';
+import TabPanels from 'primevue/tabpanels';
+import TabPanel from 'primevue/tabpanel';
+import Dialog from 'primevue/dialog';
+import InputText from 'primevue/inputtext';
+import Breadcrumb from 'primevue/breadcrumb';
+import Drawer from 'primevue/drawer';
 import { definePreset } from '@primeuix/themes';
 
 const customTheme = definePreset(Aura, {
@@ -71,6 +83,18 @@ export function appPrimevueConfig(app: ReturnType<typeof createApp>) {
   app.component('PAvatar', Avatar);
   app.component('PMenu', Menu);
   app.component('PDivider', Divider);
+  app.component('PDataTable', DataTable);
+  app.component('PColumn', Column);
+  app.component('PChart', Chart);
+  app.component('PTabs', Tabs);
+  app.component('PTabList', TabList);
+  app.component('PTab', Tab);
+  app.component('PTabPanels', TabPanels);
+  app.component('PTabPanel', TabPanel);
+  app.component('PDialog', Dialog);
+  app.component('PInputText', InputText);
+  app.component('PBreadcrumb', Breadcrumb);
+  app.component('PDrawer', Drawer);
 }
 
 declare module 'vue' {
@@ -79,5 +103,17 @@ declare module 'vue' {
     PAvatar: typeof Avatar;
     PMenu: typeof Menu;
     PDivider: typeof Divider;
+    PDataTable: typeof DataTable;
+    PColumn: typeof Column;
+    PChart: typeof Chart;
+    PTabs: typeof Tabs;
+    PTabList: typeof TabList;
+    PTab: typeof Tab;
+    PTabPanels: typeof TabPanels;
+    PTabPanel: typeof TabPanel;
+    PDialog: typeof Dialog;
+    PInputText: typeof InputText;
+    PBreadcrumb: typeof Breadcrumb;
+    PDrawer: typeof Drawer;
   }
 }

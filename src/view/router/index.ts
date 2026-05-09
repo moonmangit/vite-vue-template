@@ -9,9 +9,25 @@ const router = createRouter({
   history: createWebHistory(),
   routes: [
     {
-      name: 'home',
+      name: 'dashboard',
       path: '/',
-      component: () => import('../pages/Home.vue'),
+      component: () => import('../pages/Dashboard.vue'),
+      meta: {
+        layout: 'default',
+      },
+    },
+    {
+      name: 'users',
+      path: '/users',
+      component: () => import('../pages/UserManagement.vue'),
+      meta: {
+        layout: 'default',
+      },
+    },
+    {
+      name: 'settings',
+      path: '/settings',
+      component: () => import('../pages/Settings.vue'),
       meta: {
         layout: 'default',
       },
@@ -20,6 +36,9 @@ const router = createRouter({
       name: 'about',
       path: '/about',
       component: () => import('../pages/About.vue'),
+      meta: {
+        layout: 'default',
+      },
     },
     {
       name: 'login',
